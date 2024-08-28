@@ -46,11 +46,6 @@ def get_records(s3=None, bucket_name=None, file_name=None, verbose=False):
       print("Initializing records")
     records_df = initialize_records()
   
-  #if file_name is None:
-  #  records_df = initialize_records()
-  #else:
-  #  obj = s3.get_object(Bucket=bucket_name, Key=file_name)
-  #  records_df = pd.read_csv(io.BytesIO(obj['Body'].read()))
   return records_df
   
   
